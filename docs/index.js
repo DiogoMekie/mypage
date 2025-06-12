@@ -2,6 +2,40 @@ document.addEventListener("DOMContentLoaded", () => {
   const username = "DiogoMekie"; // your GitHub username
   const projectsContainer = document.getElementById("projects-grid");
 
+
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuToggle.addEventListener("click", () => {
+    if (mobileMenu.classList.contains("max-h-0")) {
+      mobileMenu.classList.remove("hidden");
+      mobileMenu.classList.remove("max-h-0");
+      mobileMenu.classList.add("max-h-96"); // or any large enough value
+    } else {
+      mobileMenu.classList.remove("max-h-96");
+      mobileMenu.classList.add("max-h-0");
+
+      // Wait for animation to finish before hiding the element
+      setTimeout(() => {
+        if (mobileMenu.classList.contains("max-h-0")) {
+          mobileMenu.classList.add("hidden");
+        }
+      }, 300); // matches Tailwind's duration-300
+    }
+  });
+
+
+  document.querySelectorAll("#mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("max-h-96");
+      mobileMenu.classList.add("max-h-0");
+      setTimeout(() => {
+        mobileMenu.classList.add("hidden");
+      }, 300);
+    });
+  });
+
+
   fetch(`https://api.github.com/users/${username}/repos?sort=updated`)
     .then((res) => res.json())
     .then((repos) => {
@@ -54,4 +88,3 @@ form.addEventListener("submit", function (e) {
       messageDiv.className = "text-red-400 text-center text-lg mt-4";
     });
 });
-
