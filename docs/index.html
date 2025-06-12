@@ -19,9 +19,10 @@
 
     <!-- Navigation Bar -->
     <header class="fixed top-0 w-full bg-gray-900 border-b border-gray-800 z-50">
-        <nav class="w-full h-16 flex items-center justify-between px-4 sm:px-6 lg:px-8 relative">
+        <nav class="w-full h-14 flex items-center justify-between px-4 sm:px-6 lg:px-8 relative">
+
             <!-- Logo -->
-            <a href="#hero" class="flex items-center">
+            <a href="#hero" class="flex items-center py-10">
                 <img src="https://diogomekie.github.io/mypage/assets/avatarLogo.png" alt="Logo"
                     class="h-16 w-auto rounded-full" />
             </a>
@@ -53,8 +54,9 @@
         </nav>
 
         <!-- Mobile Nav Links -->
-        <div id="mobile-menu" class="md:hidden bg-gray-900 px-4 pt-4 pb-6 hidden">
-            <ul class="space-y-4 text-center">
+        <div id="mobile-menu"
+            class="md:hidden overflow-hidden max-h-0 opacity-0 pointer-events-none bg-gray-900 px-4 transition-all duration-500 ease-in-out">
+            <ul class="space-y-4 text-center py-4">
                 <li><a href="#hero" class="block text-gray-300 hover:text-amber-400 transition">Home</a></li>
                 <li><a href="#about" class="block text-gray-300 hover:text-amber-400 transition">About</a></li>
                 <li><a href="#projects" class="block text-gray-300 hover:text-amber-400 transition">Projects</a></li>
@@ -73,7 +75,8 @@
 
 
     <!-- Hero Section -->
-    <section id="hero" class="pt-24 min-h-screen flex flex-col justify-center items-center text-center px-4 pt-28">
+    <section id="hero" class="pt-20 min-h-screen flex flex-col justify-center items-center text-center px-4">
+
         <h1 class="text-white text-4xl md:text-6xl font-bold mb-4">Diogo Gonçalves da Silva</h1>
         <p class="text-xl md:text-2xl text-gray-300 mb-8">Software Developer | Web Enthusiast</p>
         <a href="#projects" class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-full transition">View My
