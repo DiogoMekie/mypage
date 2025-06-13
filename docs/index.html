@@ -19,16 +19,16 @@
 
     <!-- Navigation Bar -->
     <header class="fixed top-0 w-full bg-gray-900 border-b border-gray-800 z-50">
-        <nav class="w-full h-14 flex items-center justify-between px-4 sm:px-6 lg:px-8 relative">
+        <nav id="navbar" class="w-full h-14 flex items-center justify-between px-4 sm:px-6 lg:px-8 relative">
 
             <!-- Logo -->
             <a href="#hero" class="flex items-center py-10">
                 <img src="https://diogomekie.github.io/mypage/assets/avatarLogo.png" alt="Logo"
-                    class="h-16 w-auto rounded-full" />
+                    class="h-18 w-auto rounded-full" />
             </a>
 
             <!-- Nav Links (desktop) -->
-            <ul class="hidden md:flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
+            <ul id="nav-links" class="hidden md:flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
                 <li><a href="#hero" class="text-gray-300 hover:text-amber-400 transition">Home</a></li>
                 <li><a href="#about" class="text-gray-300 hover:text-amber-400 transition">About</a></li>
                 <li><a href="#projects" class="text-gray-300 hover:text-amber-400 transition">Projects</a></li>
@@ -37,10 +37,18 @@
 
             <!-- Download CV -->
             <div class="hidden md:block">
-                <a href="https://diogomekie.github.io/mypage/assets/DiogoFullstackResume.pdf"
-                    class="bg-amber-500 text-gray-900 font-semibold px-4 py-2 rounded hover:bg-amber-600 transition"
-                    target="_blank" rel="noopener noreferrer">
-                    Download CV
+                <a href="https://diogomekie.github.io/mypage/assets/DiogoFullstackResume.pdf" target="_blank"
+                    rel="noopener noreferrer"
+                    id="download-cv"
+                    class="flex items-center justify-center space-x-2 bg-amber-500 text-gray-900 font-semibold px-4 py-2 rounded hover:bg-amber-600 transition transform hover:scale-105">
+                    <!-- Download Icon from Heroicons -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+
+                    <span>Download CV</span>
                 </a>
             </div>
 
@@ -62,10 +70,17 @@
                 <li><a href="#projects" class="block text-gray-300 hover:text-amber-400 transition">Projects</a></li>
                 <li><a href="#contact" class="block text-gray-300 hover:text-amber-400 transition">Contact</a></li>
                 <li>
-                    <a href="https://diogomekie.github.io/mypage/assets/DiogoFullstackResume.pdf"
-                        class="inline-block mt-2 bg-amber-500 text-gray-900 font-semibold px-4 py-2 rounded hover:bg-amber-600 transition"
-                        target="_blank" rel="noopener noreferrer">
-                        Download CV
+                    <a href="https://diogomekie.github.io/mypage/assets/DiogoFullstackResume.pdf" target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center justify-center space-x-2 bg-amber-500 text-gray-900 font-semibold px-4 py-2 rounded hover:bg-amber-600 transition transform hover:scale-105">
+                        <!-- Download Icon from Heroicons -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+
+                        <span>Download CV</span>
                     </a>
                 </li>
             </ul>
@@ -84,7 +99,7 @@
     </section>
 
     <!-- About Me -->
-    <section id="about" class="py-20 px-6 md:px-20 bg-gray-800">
+    <section id="about" class="scroll-mt-20 py-20 px-6 md:px-20 bg-gray-800">
         <h2 class="text-3xl font-semibold mb-6">About Me</h2>
         <div class="text-gray-300 max-w-3xl space-y-6">
             <p>
@@ -104,7 +119,7 @@
     </section>
 
     <!--- Projects Section -->
-    <section id="projects" class="py-20 px-6 md:px-20">
+    <section id="projects" class="scroll-mt-20 py-20 px-6 md:px-20">
         <h2 class="text-3xl font-semibold mb-10">Projects</h2>
         <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Project Card injected here using JS -->
@@ -112,7 +127,7 @@
     </section>
 
     <!-- Contact Section with emailjs-->
-    <section id="contact" class="py-20 px-4 bg-gray-900 text-white">
+    <section id="contact" class="scroll-mt-20 py-20 px-4 bg-gray-900 text-white">
         <div class="max-w-xl mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
             <h2 class="text-3xl font-bold mb-2 text-center">Let's get in touch</h2>
             <p class="text-gray-400 text-center mb-8">
@@ -157,9 +172,9 @@
     </section>
 
 
-    <!-- Contact Section -->
+    <!-- Footer -->
     <footer class="py-10 bg-gray-800 text-center text-sm text-gray-400">
-        <p class="mb-2">Get in touch:</p>
+        <p class="mb-2">© 2025 André Gonçalves. All rights reserved.</p>
         <div class="flex justify-center space-x-4">
             <a href="mailto:mail@mail.com" class="text-blue-400 hover:underline">mail@mail.com</a>
             <a href="https://github.com/DiogoMekie" target="_blank" class="text-blue-400 hover:underline">GitHub</a>

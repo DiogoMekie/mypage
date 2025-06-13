@@ -1,7 +1,19 @@
 body {
-    font-family: 'Inter', sans-serif;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  padding: 45px;
+}
+
+#nav-links {
+  font-size: 23px;
+}
+
+#download-cv {
+  font-size: 19px;
+}
