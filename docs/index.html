@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Little Portfolio</title>
+    <title>Diogo Gonçalves | Software Developer</title>
+    <link rel="icon" type="image/x-icon" href="https://diogomekie.github.io/mypage/assets/avatarLogo.png">
     <link rel="stylesheet" href="output.css">
     <script src="index.js" defer></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         emailjs.init('1UnJTvrtjbqc2aDq0');
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
 
 
 </head>
@@ -38,9 +41,8 @@
             <!-- Download CV -->
             <div class="hidden md:block">
                 <a href="https://diogomekie.github.io/mypage/assets/DiogoFullstackResume.pdf" target="_blank"
-                    rel="noopener noreferrer"
-                    id="download-cv"
-                    class="flex items-center justify-center space-x-2 bg-amber-500 text-gray-900 font-semibold px-4 py-2 rounded hover:bg-amber-600 transition transform hover:scale-105">
+                    rel="noopener noreferrer" id="download-cv"
+                    class="flex items-center justify-center space-x-2 bg-amber-500 text-white font-semibold px-4 py-2 rounded hover:bg-amber-600 transition transform hover:scale-105">
                     <!-- Download Icon from Heroicons -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor" stroke-width="2">
@@ -72,7 +74,7 @@
                 <li>
                     <a href="https://diogomekie.github.io/mypage/assets/DiogoFullstackResume.pdf" target="_blank"
                         rel="noopener noreferrer"
-                        class="flex items-center justify-center space-x-2 bg-amber-500 text-gray-900 font-semibold px-4 py-2 rounded hover:bg-amber-600 transition transform hover:scale-105">
+                        class="flex items-center justify-center space-x-2 bg-amber-500 text-white font-semibold px-4 py-2 rounded hover:bg-amber-600 transition transform hover:scale-105">
                         <!-- Download Icon from Heroicons -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" stroke-width="2">
@@ -90,12 +92,25 @@
 
 
     <!-- Hero Section -->
-    <section id="hero" class="pt-20 min-h-screen flex flex-col justify-center items-center text-center px-4">
+    <section id="hero"
+        class="relative pt-32 min-h-screen flex flex-col justify-center items-center text-center px-4 bg-animated-gradient text-white">
 
-        <h1 class="text-white text-4xl md:text-6xl font-bold mb-4">Diogo Gonçalves da Silva</h1>
-        <p class="text-xl md:text-2xl text-gray-300 mb-8">Software Developer | Web Enthusiast</p>
-        <a href="#projects" class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-full transition">View My
-            Work</a>
+        <!-- Line 1 -->
+        <h1 id="line1" 
+            class="text-6xl md:text-8xl font-bold text-amber-500 mb-6 whitespace-nowrap"></h1>
+
+        <!-- Line 2 -->
+        <h2 id="line2" class="text-5xl md:text-7xl font-bold text-white mb-10 whitespace-nowrap relative"></h2>
+
+        <!-- Subtitles -->
+        <p id="subtitle" class="text-3xl md:text-5xl text-gray-300 mb-14 opacity-0 transition-opacity duration-1000">
+        </p>
+
+        <!-- CTA Button -->
+        <a href="#projects"
+            class="bg-amber-500 font-semibold hover:bg-amber-600 text-white px-7 py-4 rounded-full text-xl transition-all duration-300">
+            View My Work
+        </a>
     </section>
 
     <!-- About Me -->
@@ -181,6 +196,7 @@
         </div>
     </footer>
 
+    <div id="tsparticles" class="absolute top-0 left-0 w-full h-full -z-10"></div>
 
 </body>
 

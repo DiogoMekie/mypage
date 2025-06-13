@@ -17,3 +17,18 @@ html {
 #download-cv {
   font-size: 19px;
 }
+
+
+#line2.cursor::after {
+  content: '|';
+  position: absolute;
+  right: -10px;
+  animation: blink 1s steps(1) infinite;
+  color: #fbbf24; /* amber-400 */
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

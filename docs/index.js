@@ -20,16 +20,76 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
-
-
-
   document.querySelectorAll("#mobile-menu a").forEach(link => {
     link.addEventListener("click", () => {
-      mobileMenu.classList.remove("max-h-[500px]");
-      mobileMenu.classList.add("max-h-0");
+      mobileMenu.classList.remove("max-h-screen", "opacity-100", "pointer-events-auto", "scale-y-100");
+      mobileMenu.classList.add("max-h-0", "opacity-0", "pointer-events-none", "scale-y-0");
       isOpen = false;
     });
   });
+
+
+
+  const line1Text = "Hello there!";
+  const line2Text = "My name is Diogo.";
+
+  const line1El = document.getElementById("line1");
+  const line2El = document.getElementById("line2");
+  const subtitleEl = document.getElementById("subtitle");
+
+  let i = 0, j = 0;
+
+  function typeLine1() {
+    if (i < line1Text.length) {
+      line1El.textContent += line1Text.charAt(i);
+      i++;
+      setTimeout(typeLine1, 80);
+    } else {
+      setTimeout(typeLine2, 500);
+    }
+  }
+
+  function typeLine2() {
+    if (j < line2Text.length) {
+      line2El.textContent += line2Text.charAt(j);
+      j++;
+      setTimeout(typeLine2, 80);
+    } else {
+      // 💡 Show blinking cursor only now
+      line2El.classList.add("cursor");
+      setTimeout(startSubtitles, 600);
+    }
+  }
+
+
+  typeLine1();
+
+  // Subtitles
+  const subtitles = [
+    "Software Developer",
+    "Tech Enthusiast",
+    "Java Dev.",
+    "Bookworm",
+    "Aspiring Jedi"
+  ];
+
+  let subIndex = 0;
+
+  function startSubtitles() {
+    showNextSubtitle();
+  }
+
+  function showNextSubtitle() {
+    subtitleEl.style.opacity = 0;
+    setTimeout(() => {
+      subtitleEl.textContent = subtitles[subIndex];
+      subtitleEl.style.opacity = 1;
+      subIndex = (subIndex + 1) % subtitles.length;
+      setTimeout(showNextSubtitle, 2500);
+    }, 400);
+  }
+
+
 
 
 
@@ -85,3 +145,44 @@ form.addEventListener("submit", function (e) {
       messageDiv.className = "text-red-400 text-center text-lg mt-4";
     });
 });
+
+tsParticles.load("tsparticles", {
+  background: {
+    color: "#0f172a"
+  },
+  particles: {
+    number: {
+      value: 40,
+      density: {
+        enable: true,
+        area: 800
+      }
+    },
+    color: {
+      value: "#f59e0b" // amber/gold
+    },
+    shape: {
+      type: "circle"
+    },
+    opacity: {
+      value: 0.6,
+      random: true
+    },
+    size: {
+      value: 3,
+      random: true
+    },
+    move: {
+      enable: true,
+      speed: 0.5,
+      direction: "none",
+      random: true,
+      straight: false,
+      outMode: "out"
+    }
+  },
+  fullScreen: {
+    enable: false
+  }
+});
+
