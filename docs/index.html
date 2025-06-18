@@ -33,11 +33,23 @@
             </a>
 
             <!-- Nav Links (desktop) -->
-            <ul id="nav-links" class="hidden md:flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
-                <li><a href="#hero" class="text-gray-300 hover:text-amber-400 transition">Home</a></li>
-                <li><a href="#about" class="text-gray-300 hover:text-amber-400 transition">About</a></li>
-                <li><a href="#projects" class="text-gray-300 hover:text-amber-400 transition">Projects</a></li>
-                <li><a href="#contact" class="text-gray-300 hover:text-amber-400 transition">Contact</a></li>
+            <ul id="nav-links" class="hidden md:flex space-x-6 absolute left-1/2 transform -translate-x-1/2" data-aos="fade-down" data-aos-delay="200">
+                <li><a href="#hero" aria-label="Navigate to Home"
+                        class="text-gray-300 px-4 py-2 rounded-full hover:border hover:border-amber-400 transition duration-300 hover:text-amber-400 hover:bg-gray-700/50 hover:shadow-md">
+                        Home
+                    </a></li>
+                <li><a href="#about"
+                        class="text-gray-300 px-4 py-2 rounded-full hover:border hover:border-amber-400 transition duration-300 hover:text-amber-400 hover:bg-gray-700/50 hover:shadow-md">
+                        About
+                    </a></li>
+                <li><a href="#projects"
+                        class="text-gray-300 px-4 py-2 rounded-full hover:border hover:border-amber-400 transition duration-300 hover:text-amber-400 hover:bg-gray-700/50 hover:shadow-md">
+                        Projects
+                    </a></li>
+                <li><a href="#contact"
+                        class="text-gray-300 px-4 py-2 rounded-full hover:border hover:border-amber-400 transition duration-300 hover:text-amber-400 hover:bg-gray-700/50 hover:shadow-md">
+                        Contact
+                    </a></li>
             </ul>
 
             <!-- Download CV -->
@@ -57,7 +69,7 @@
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="menu-toggle" class="md:hidden text-gray-300 focus:outline-none z-50">
+            <button id="menu-toggle" class="md:hidden text-gray-300 focus:outline-none z-50 transition-transform duration-300">
                 <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path d="M4 6h16M4 12h16M4 18h16" />
@@ -154,16 +166,16 @@
                     <div class="space-y-4">
                         <h4 class="text-xl text-amber-400 font-semibold text-center">Frontend</h4>
                         <div class="flex flex-wrap justify-center gap-6 bg-gray-800/40 p-4 rounded-xl">
-                            <i class="w-10 h-10 object-contain devicon-html5-plain colored text-4xl hover:scale-110" title="HTML5" data-aos="zoom-in"
-                                data-aos-delay="100"></i>
-                            <i class="w-10 h-10 object-contain devicon-css3-plain colored text-4xl hover:scale-110" title="CSS3" data-aos="zoom-in"
-                                data-aos-delay="100"></i>
-                            <i class="w-10 h-10 object-contain devicon-javascript-plain colored text-4xl hover:scale-110" title="JavaScript" data-aos="zoom-in"
-                                data-aos-delay="100"></i>
-                            <i class="w-10 h-10 object-contain devicon-bootstrap-plain colored text-4xl hover:scale-110" title="Bootstrap" data-aos="zoom-in"
-                                data-aos-delay="100"></i>
-                            <i class="w-10 h-10 object-contain devicon-tailwindcss-plain colored text-4xl hover:scale-110" title="Tailwind CSS"
-                                data-aos="zoom-in" data-aos-delay="100"></i>
+                            <i class="w-10 h-10 object-contain devicon-html5-plain colored text-4xl hover:scale-110"
+                                title="HTML5" data-aos="zoom-in" data-aos-delay="100"></i>
+                            <i class="w-10 h-10 object-contain devicon-css3-plain colored text-4xl hover:scale-110"
+                                title="CSS3" data-aos="zoom-in" data-aos-delay="100"></i>
+                            <i class="w-10 h-10 object-contain devicon-javascript-plain colored text-4xl hover:scale-110"
+                                title="JavaScript" data-aos="zoom-in" data-aos-delay="100"></i>
+                            <i class="w-10 h-10 object-contain devicon-bootstrap-plain colored text-4xl hover:scale-110"
+                                title="Bootstrap" data-aos="zoom-in" data-aos-delay="100"></i>
+                            <i class="w-10 h-10 object-contain devicon-tailwindcss-plain colored text-4xl hover:scale-110"
+                                title="Tailwind CSS" data-aos="zoom-in" data-aos-delay="100"></i>
                         </div>
                     </div>
 
@@ -171,12 +183,12 @@
                     <div class="space-y-4">
                         <h4 class="text-xl text-amber-400 font-semibold text-center">Backend</h4>
                         <div class="flex flex-wrap justify-center gap-6 bg-gray-800/40 p-4 rounded-xl">
-                            <i class="w-10 h-10 object-contain devicon-java-plain colored text-4xl hover:scale-110" title="Java" data-aos="zoom-in"
-                                data-aos-delay="100"></i>
-                            <i class="w-10 h-10 object-contain devicon-spring-plain colored text-4xl hover:scale-110" title="Spring" data-aos="zoom-in"
-                                data-aos-delay="100"></i>
-                            <i class="w-10 h-10 object-contain devicon-nodejs-plain colored text-4xl hover:scale-110" title="Node.js" data-aos="zoom-in"
-                                data-aos-delay="100"></i>
+                            <i class="w-10 h-10 object-contain devicon-java-plain colored text-4xl hover:scale-110"
+                                title="Java" data-aos="zoom-in" data-aos-delay="100"></i>
+                            <i class="w-10 h-10 object-contain devicon-spring-plain colored text-4xl hover:scale-110"
+                                title="Spring" data-aos="zoom-in" data-aos-delay="100"></i>
+                            <i class="w-10 h-10 object-contain devicon-nodejs-plain colored text-4xl hover:scale-110"
+                                title="Node.js" data-aos="zoom-in" data-aos-delay="100"></i>
                         </div>
                     </div>
 
@@ -184,10 +196,10 @@
                     <div class="space-y-4">
                         <h4 class="text-xl text-amber-400 font-semibold text-center">Databases & Tools</h4>
                         <div class="flex flex-wrap justify-center gap-6 bg-gray-800/40 p-4 rounded-xl">
-                            <i class="w-10 h-10 object-contain devicon-postgresql-plain colored text-4xl hover:scale-110" title="PostgreSQL" data-aos="zoom-in"
-                                data-aos-delay="100"></i>
-                            <i class="w-10 h-10 object-contain devicon-mysql-plain colored text-4xl hover:scale-110" title="MySQL" data-aos="zoom-in"
-                                data-aos-delay="100"></i>
+                            <i class="w-10 h-10 object-contain devicon-postgresql-plain colored text-4xl hover:scale-110"
+                                title="PostgreSQL" data-aos="zoom-in" data-aos-delay="100"></i>
+                            <i class="w-10 h-10 object-contain devicon-mysql-plain colored text-4xl hover:scale-110"
+                                title="MySQL" data-aos="zoom-in" data-aos-delay="100"></i>
 
                         </div>
                     </div>
@@ -198,20 +210,21 @@
                         <div class="flex flex-wrap justify-center gap-6 bg-gray-800/40 p-4 rounded-xl">
 
                             <!-- GitHub -->
-                            <i class="w-10 h-10 object-contain devicon-github-original colored text-4xl hover:scale-110" title="GitHub" data-aos="zoom-in"
-                                data-aos-delay="100"></i>
+                            <i class="w-10 h-10 object-contain devicon-github-original colored text-4xl hover:scale-110"
+                                title="GitHub" data-aos="zoom-in" data-aos-delay="100"></i>
 
                             <!-- Tomcat -->
-                            <i class="w-10 h-10 object-contain devicon-tomcat-line colored text-4xl hover:scale-110" title="Apache Tomcat" data-aos="zoom-in"
-                                data-aos-delay="100"></i>
+                            <i class="w-10 h-10 object-contain devicon-tomcat-line colored text-4xl hover:scale-110"
+                                title="Apache Tomcat" data-aos="zoom-in" data-aos-delay="100"></i>
 
                             <!-- Maven -->
-                            <i class="w-10 h-10 object-contain devicon-maven-plain-wordmark text-4xl hover:scale-110" title="Maven" data-aos="zoom-in"
-                                data-aos-delay="100"></i>
+                            <i class="w-10 h-10 object-contain devicon-maven-plain-wordmark text-4xl hover:scale-110"
+                                title="Maven" data-aos="zoom-in" data-aos-delay="100"></i>
 
                             <!-- Hibernate (custom SVG because not in devicon) -->
                             <img src="https://www.vectorlogo.zone/logos/hibernate/hibernate-icon.svg" alt="Hibernate"
-                                title="Hibernate" class="w-10 h-10 object-contain hover:scale-110 transition duration-300"
+                                title="Hibernate"
+                                class="w-10 h-10 object-contain hover:scale-110 transition duration-300"
                                 data-aos="zoom-in" data-aos-delay="100" />
 
                             <!-- REST API (generic globe icon) -->
@@ -242,66 +255,107 @@
 
     <!--- Projects Section -->
     <section id="projects" class="scroll-mt-20 py-20 px-6 md:px-20">
-        <h2 class="text-3xl font-semibold mb-10">Projects</h2>
+        <h2 class="text-4xl md:text-5xl font-bold text-amber-500 text-center mb-16">Projects</h2>
+
+
+        <!-- Loading Spinner -->
+        <div id="projects-loading" class="flex justify-center items-center py-10">
+            <div class="animate-spin rounded-full h-10 w-10 border-t-4 border-amber-400 border-opacity-50"></div>
+        </div>
+
         <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Project Card injected here using JS -->
+            <!-- Project cards will be injected here -->
         </div>
     </section>
 
-    <!-- Contact Section with emailjs-->
-    <section id="contact" class="scroll-mt-20 py-20 px-4 bg-gray-900 text-white">
-        <div class="max-w-xl mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
-            <h2 class="text-3xl font-bold mb-2 text-center">Let's get in touch</h2>
-            <p class="text-gray-400 text-center mb-8">
-                Feel free to reach out! Whether you've got a question, want to collaborate, or just fancy a chat, my
-                inbox is always open.
-            </p>
+    <!-- Contact Section -->
+    <section id="contact" class="scroll-mt-20 py-20 px-6 md:px-20 bg-gray-900 text-white relative z-10">
+        <h2 class="text-4xl md:text-5xl font-bold text-amber-500 text-center mb-12">Contact Me</h2>
 
-            <form id="contact-form" class="space-y-6">
+        <form id="contact-form"
+            class="max-w-3xl mx-auto space-y-6 bg-white/5 border border-white/10 p-8 rounded-2xl shadow-xl backdrop-blur-lg">
+
+            <!-- Name & Email -->
+            <div class="grid md:grid-cols-2 gap-6">
                 <div>
-                    <label for="name" class="block mb-1 text-sm font-medium">Your name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name" required
-                        class="w-full px-4 py-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400" />
+                    <label for="name" class="block mb-2 text-sm font-semibold text-amber-300">Name</label>
+                    <input type="text" name="name" id="name" required
+                        class="w-full px-4 py-3 rounded-lg bg-gray-700/80 text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500 transition">
                 </div>
                 <div>
-                    <label for="email" class="block mb-1 text-sm font-medium">Your email</label>
-                    <input type="email" id="email" name="email" placeholder="name@email.com" required
-                        class="w-full px-4 py-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400" />
+                    <label for="email" class="block mb-2 text-sm font-semibold text-amber-300">Email</label>
+                    <input type="email" name="email" id="email" required
+                        class="w-full px-4 py-3 rounded-lg bg-gray-700/80 text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500 transition">
                 </div>
+            </div>
 
-                <div>
-                    <label for="subject" class="block mb-1 text-sm font-medium">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Subject" required
-                        class="w-full px-4 py-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400" />
-                </div>
+            <!-- Subject -->
+            <div>
+                <label for="title" class="block mb-2 text-sm font-semibold text-amber-300">Subject</label>
+                <input type="text" name="title" id="title" required
+                    class="w-full px-4 py-3 rounded-lg bg-gray-700/80 text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500 transition">
+            </div>
 
-                <div>
-                    <label for="message" class="block mb-1 text-sm font-medium">Message</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Your message here" required
-                        class="w-full px-4 py-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 resize-none"></textarea>
-                </div>
+            <!-- Message -->
+            <div>
+                <label for="message" class="block mb-2 text-sm font-semibold text-amber-300">Message</label>
+                <textarea name="message" id="message" rows="5" required
+                    class="w-full px-4 py-3 rounded-lg bg-gray-700/80 text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500 transition resize-none"></textarea>
+            </div>
 
-
-                <button
-                    class="w-full py-2 rounded-md bg-amber-500 hover:bg-amber-600 transition duration-200 font-semibold">
-                    SEND MESSAGE
+            <!-- Submit Button with Icon -->
+            <div class="text-center">
+                <button type="submit"
+                    class="group inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-amber-500 text-gray-900 font-bold hover:bg-amber-400 transition-all duration-300 shadow-md hover:shadow-amber-300/50 hover:scale-105">
+                    Send Message
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 transition-transform duration-300 transform group-hover:translate-x-1">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.75 2.25 11.25 13.5m0 0L8.25 21l8.25-3-5.25-5.25M11.25 13.5l10.5-10.5" />
+                    </svg>
                 </button>
+            </div>
 
+            <!-- Feedback Message -->
+            <div id="form-message" class="text-center text-lg mt-4"></div>
 
-                <p id="form-message" class="text-center text-sm mt-2"></p>
-            </form>
-        </div>
+        </form>
     </section>
+
+
 
 
     <!-- Footer -->
-    <footer class="py-10 bg-gray-800 text-center text-sm text-gray-400">
-        <p class="mb-2">© 2025 André Gonçalves. All rights reserved.</p>
-        <div class="flex justify-center space-x-4">
-            <a href="mailto:mail@mail.com" class="text-blue-400 hover:underline">mail@mail.com</a>
-            <a href="https://github.com/DiogoMekie" target="_blank" class="text-blue-400 hover:underline">GitHub</a>
+    <!-- Footer -->
+    <footer class="py-10 px-6 bg-gray-900 text-gray-400 border-t border-white/10 text-center">
+        <p class="text-sm mb-4">© 2025 <span class="text-amber-400 font-medium">Diogo Gonçalves</span>. All rights
+            reserved.</p>
+
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 text-sm">
+            <!-- Email -->
+            <a href="mailto:diogogoncalves.s@gmail.com" class="flex items-center gap-2 hover:text-amber-400 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5A2.25 2.25 0 012.25 17.25V6.75A2.25 2.25 0 014.5 4.5h15a2.25 2.25 0 012.25 2.25z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 6.75l9 6 9-6" />
+                </svg>
+                diogogoncalves.s@gmail.com
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/DiogoMekie" target="_blank"
+                class="flex items-center gap-2 hover:text-amber-400 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 0C5.37 0 0 5.373 0 12a12 12 0 008.21 11.385c.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.61-4.033-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.086 1.84 1.238 1.84 1.238 1.07 1.833 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.932 0-1.31.465-2.381 1.235-3.22-.123-.303-.535-1.522.117-3.176 0 0 1.008-.323 3.3 1.23a11.5 11.5 0 016 0c2.29-1.553 3.297-1.23 3.297-1.23.653 1.654.241 2.873.118 3.176.77.839 1.234 1.91 1.234 3.22 0 4.61-2.807 5.628-5.48 5.922.43.372.814 1.103.814 2.222v3.293c0 .321.218.694.825.576A12.003 12.003 0 0024 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+                GitHub
+            </a>
         </div>
     </footer>
+
 
     <div id="tsparticles" class="absolute top-0 left-0 w-full h-full -z-10"></div>
 

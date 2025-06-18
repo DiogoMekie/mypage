@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  menuToggle.classList.toggle("rotate-90");
+
 
 
   const line1Text = "Hello there!";
@@ -89,32 +91,59 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 400);
   }
 
-
-
-
-
   fetch(`https://api.github.com/users/${username}/repos?sort=updated`)
     .then((res) => res.json())
     .then((repos) => {
       const filtered = repos.filter(repo => !repo.fork);
 
+      // Hide the spinner
+      document.getElementById("projects-loading").style.display = "none";
+
+      if (filtered.length === 0) {
+        projectsContainer.innerHTML = "<p class='text-gray-400'>No public projects to show right now.</p>";
+        return;
+      }
+
       filtered.forEach((repo) => {
         const card = document.createElement("div");
-        card.className = "bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition";
+        card.className = `
+    bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800
+    p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300
+    border border-gray-700 hover:border-amber-400 transform hover:-translate-y-1
+  `;
+        card.setAttribute("data-aos", "fade-up");
 
         card.innerHTML = `
-            <h3 class="text-xl font-bold mb-2">${repo.name}</h3>
-            <p class="text-gray-400 mb-4">${repo.description || "No description provided."}</p>
-            <a href="${repo.html_url}" class="text-blue-400 hover:underline" target="_blank">View on GitHub</a>
-          `;
+    <div class="flex flex-col h-full justify-between">
+      <div>
+        <h3 class="text-xl font-bold text-amber-400 mb-2 flex items-center gap-2">
+          <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+          </svg>
+          ${repo.name}
+        </h3>
+        <p class="text-gray-300 mb-4 text-sm">${repo.description || "No description provided."}</p>
+      </div>
+      <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer"
+        class="inline-block mt-auto text-sm text-amber-400 hover:text-white transition-colors duration-300 underline underline-offset-4 decoration-dotted">
+        View on GitHub →
+      </a>
+    </div>
+  `;
 
         projectsContainer.appendChild(card);
       });
+
     })
     .catch((error) => {
       console.error("Error fetching GitHub repos:", error);
+
+      // Hide the spinner
+      document.getElementById("projects-loading").style.display = "none";
+
       projectsContainer.innerHTML = "<p class='text-red-500'>Failed to load projects.</p>";
     });
+
 });
 
 const form = document.getElementById("contact-form");
