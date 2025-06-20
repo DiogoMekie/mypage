@@ -129,20 +129,17 @@
     </section>
 
     <!-- About Me -->
-    <section id="about" class="scroll-mt-10 px-6 md:px-12 py-24 bg-gray-900 text-white">
+    <section id="about" class="scroll-mt-24 px-6 py-24 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-amber-500 text-center mb-16">About Me</h2>
 
-        <div class="max-w-5xl mx-auto space-y-12">
-            <h2 class="text-4xl md:text-5xl font-bold text-amber-500 text-center">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+                <div class="col-span-12 md:col-span-3 flex justify-center md:justify-start">
+                    <img src="https://diogomekie.github.io/mypage/assets/diogo_foto_cv.jpeg" alt="Diogo"
+                        class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-amber-500 shadow-md" />
+                </div>
 
-            <div class="flex flex-col md:flex-row items-center gap-10 pt-6 md:pt-0">
-
-                <img src="https://diogomekie.github.io/mypage/assets/diogo_foto_cv.jpeg" alt="Diogo"
-                    class="w-50 h-50 rounded-full object-cover border-4 border-amber-500 shadow-md" />
-
-
-                <!-- Text -->
-                <div class="text-lg md:text-xl space-y-6 leading-relaxed text-gray-300 max-w-4xl">
-
+                <div class="col-span-12 md:col-span-6 text-lg md:text-base space-y-6 leading-relaxed text-gray-300">
                     <p>
                         I'm Diogo, a former hospitality professional turned software developer with a passion for
                         problem-solving and lifelong learning. After spending nearly a decade in England working in
@@ -165,104 +162,55 @@
                     </p>
                     <p>Also — I may or may not have an unhealthy obsession with Star Wars.</p>
                 </div>
-            </div>
-            <!-- Tech Stack -->
-            <div class="pt-10 space-y-10">
-                <h3 class="text-3xl font-semibold text-white mb-4 text-center">Tech Stack</h3>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10" data-aos="fade-up">
-
-                    <!-- Frontend -->
-                    <div class="space-y-4">
-                        <h4 class="text-xl text-amber-400 font-semibold text-center">Frontend</h4>
-                        <div class="flex flex-wrap justify-center gap-6 bg-gray-800/40 p-4 rounded-xl">
-                            <i class="w-10 h-10 object-contain devicon-html5-plain colored text-4xl hover:scale-110"
-                                title="HTML5" data-aos="zoom-in" data-aos-delay="100"></i>
-                            <i class="w-10 h-10 object-contain devicon-css3-plain colored text-4xl hover:scale-110"
-                                title="CSS3" data-aos="zoom-in" data-aos-delay="100"></i>
-                            <i class="w-10 h-10 object-contain devicon-javascript-plain colored text-4xl hover:scale-110"
-                                title="JavaScript" data-aos="zoom-in" data-aos-delay="100"></i>
-                            <i class="w-10 h-10 object-contain devicon-bootstrap-plain colored text-4xl hover:scale-110"
-                                title="Bootstrap" data-aos="zoom-in" data-aos-delay="100"></i>
-                            <i class="w-10 h-10 object-contain devicon-tailwindcss-plain colored text-4xl hover:scale-110"
-                                title="Tailwind CSS" data-aos="zoom-in" data-aos-delay="100"></i>
-                        </div>
+                <div class="col-span-12 md:col-start-10 md:col-span-3 flex flex-col items-center md:items-end">
+                    <h3 class="text-xl font-semibold text-amber-400 mb-4 text-center md:text-right">Tech Stack</h3>
+                    <div class="flex flex-wrap justify-center md:justify-end gap-4 bg-gray-800/40 p-4 rounded-xl">
+                        <i class="w-10 h-10 object-contain devicon-html5-plain colored text-4xl hover:scale-110"
+                            title="HTML5" data-aos="zoom-in" data-aos-delay="100"></i>
+                        <i class="w-10 h-10 object-contain devicon-css3-plain colored text-4xl hover:scale-110"
+                            title="CSS3" data-aos="zoom-in" data-aos-delay="100"></i>
+                        <i class="w-10 h-10 object-contain devicon-javascript-plain colored text-4xl hover:scale-110"
+                            title="JavaScript" data-aos="zoom-in" data-aos-delay="100"></i>
+                        <i class="w-10 h-10 object-contain devicon-bootstrap-plain colored text-4xl hover:scale-110"
+                            title="Bootstrap" data-aos="zoom-in" data-aos-delay="100"></i>
+                        <i class="w-10 h-10 object-contain devicon-tailwindcss-plain colored text-4xl hover:scale-110"
+                            title="Tailwind CSS" data-aos="zoom-in" data-aos-delay="100"></i>
+                        <i class="w-10 h-10 object-contain devicon-java-plain colored text-4xl hover:scale-110"
+                            title="Java" data-aos="zoom-in" data-aos-delay="100"></i>
+                        <i class="w-10 h-10 object-contain devicon-spring-plain colored text-4xl hover:scale-110"
+                            title="Spring" data-aos="zoom-in" data-aos-delay="100"></i>
+                        <i class="w-10 h-10 object-contain devicon-nodejs-plain colored text-4xl hover:scale-110"
+                            title="Node.js" data-aos="zoom-in" data-aos-delay="100"></i>
+                        <i class="w-10 h-10 object-contain devicon-postgresql-plain colored text-4xl hover:scale-110"
+                            title="PostgreSQL" data-aos="zoom-in" data-aos-delay="100"></i>
+                        <i class="w-10 h-10 object-contain devicon-mysql-plain colored text-4xl hover:scale-110"
+                            title="MySQL" data-aos="zoom-in" data-aos-delay="100"></i>
+                        <i class="w-10 h-10 object-contain devicon-github-original colored text-4xl hover:scale-110"
+                            title="GitHub" data-aos="zoom-in" data-aos-delay="100"></i>
+                        <i class="w-10 h-10 object-contain devicon-tomcat-line colored text-4xl hover:scale-110"
+                            title="Apache Tomcat" data-aos="zoom-in" data-aos-delay="100"></i>
+                        <i class="w-10 h-10 object-contain devicon-maven-plain-wordmark text-4xl hover:scale-110"
+                            title="Maven" data-aos="zoom-in" data-aos-delay="100"></i>
+                        <img src="https://www.vectorlogo.zone/logos/hibernate/hibernate-icon.svg" alt="Hibernate"
+                            title="Hibernate" class="w-10 h-10 object-contain hover:scale-110 transition duration-300"
+                            data-aos="zoom-in" data-aos-delay="100" />
+                        <img src="https://diogomekie.github.io/mypage/assets/rest-api-icon.svg" alt="REST API"
+                            title="REST API"
+                            class="w-10 h-10 object-contain hover:grayscale hover:scale-110 transition duration-300"
+                            data-aos="zoom-in" data-aos-delay="100" />
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/junit/junit-original.svg"
+                            alt="JUnit" title="JUnit" class="w-10 h-10 transition duration-300" data-aos="zoom-in"
+                            data-aos-delay="100" />
+                        <img src="https://diogomekie.github.io/mypage/assets/mockitonobg.png" alt="Mockito"
+                            title="Mockito"
+                            class="w-10 h-10 rounded bg-white p-1 hover:scale-110 transition duration-300 "
+                            data-aos="zoom-in" data-aos-delay="100" />
                     </div>
-
-                    <!-- Backend -->
-                    <div class="space-y-4">
-                        <h4 class="text-xl text-amber-400 font-semibold text-center">Backend</h4>
-                        <div class="flex flex-wrap justify-center gap-6 bg-gray-800/40 p-4 rounded-xl">
-                            <i class="w-10 h-10 object-contain devicon-java-plain colored text-4xl hover:scale-110"
-                                title="Java" data-aos="zoom-in" data-aos-delay="100"></i>
-                            <i class="w-10 h-10 object-contain devicon-spring-plain colored text-4xl hover:scale-110"
-                                title="Spring" data-aos="zoom-in" data-aos-delay="100"></i>
-                            <i class="w-10 h-10 object-contain devicon-nodejs-plain colored text-4xl hover:scale-110"
-                                title="Node.js" data-aos="zoom-in" data-aos-delay="100"></i>
-                        </div>
-                    </div>
-
-                    <!-- Databases & Tools -->
-                    <div class="space-y-4">
-                        <h4 class="text-xl text-amber-400 font-semibold text-center">Databases & Tools</h4>
-                        <div class="flex flex-wrap justify-center gap-6 bg-gray-800/40 p-4 rounded-xl">
-                            <i class="w-10 h-10 object-contain devicon-postgresql-plain colored text-4xl hover:scale-110"
-                                title="PostgreSQL" data-aos="zoom-in" data-aos-delay="100"></i>
-                            <i class="w-10 h-10 object-contain devicon-mysql-plain colored text-4xl hover:scale-110"
-                                title="MySQL" data-aos="zoom-in" data-aos-delay="100"></i>
-
-                        </div>
-                    </div>
-
-                    <!-- Others -->
-                    <div class="space-y-4">
-                        <h4 class="text-xl text-amber-400 font-semibold text-center">Others</h4>
-                        <div class="flex flex-wrap justify-center gap-6 bg-gray-800/40 p-4 rounded-xl">
-
-                            <!-- GitHub -->
-                            <i class="w-10 h-10 object-contain devicon-github-original colored text-4xl hover:scale-110"
-                                title="GitHub" data-aos="zoom-in" data-aos-delay="100"></i>
-
-                            <!-- Tomcat -->
-                            <i class="w-10 h-10 object-contain devicon-tomcat-line colored text-4xl hover:scale-110"
-                                title="Apache Tomcat" data-aos="zoom-in" data-aos-delay="100"></i>
-
-                            <!-- Maven -->
-                            <i class="w-10 h-10 object-contain devicon-maven-plain-wordmark text-4xl hover:scale-110"
-                                title="Maven" data-aos="zoom-in" data-aos-delay="100"></i>
-
-                            <!-- Hibernate (custom SVG because not in devicon) -->
-                            <img src="https://www.vectorlogo.zone/logos/hibernate/hibernate-icon.svg" alt="Hibernate"
-                                title="Hibernate"
-                                class="w-10 h-10 object-contain hover:scale-110 transition duration-300"
-                                data-aos="zoom-in" data-aos-delay="100" />
-
-                            <!-- REST API (generic globe icon) -->
-                            <img src="https://diogomekie.github.io/mypage/assets/rest-api-icon.svg" alt="REST API"
-                                title="REST API"
-                                class="w-10 h-10 object-contain hover:grayscale hover:scale-110 transition duration-300"
-                                data-aos="zoom-in" data-aos-delay="100" />
-
-
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/junit/junit-original.svg"
-                                alt="JUnit" title="JUnit" class="w-10 h-10  transition duration-300" data-aos="zoom-in"
-                                data-aos-delay="100" />
-
-                            <img src="https://diogomekie.github.io/mypage/assets/mockitonobg.png" alt="Mockito"
-                                title="Mockito"
-                                class="w-10 h-10 rounded bg-white p-1 hover:scale-110 transition duration-300 "
-                                data-aos="zoom-in" data-aos-delay="100" />
-
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
     </section>
-
-
-
     <!--- Projects Section -->
     <section id="projects" class="scroll-mt-20 py-20 px-6 md:px-20">
         <h2 class="text-4xl md:text-5xl font-bold text-amber-500 text-center mb-16">Projects</h2>
@@ -333,10 +281,6 @@
         </form>
     </section>
 
-
-
-
-    <!-- Footer -->
     <!-- Footer -->
     <footer class="py-10 px-6 bg-gray-900 text-gray-400 border-t border-white/10 text-center">
         <p class="text-sm mb-4">© 2025 <span class="text-amber-400 font-medium">Diogo Gonçalves</span>. All rights
