@@ -177,7 +177,7 @@ form.addEventListener("submit", function (e) {
 
 tsParticles.load("tsparticles", {
   background: {
-    color: "#0f172a"
+    color: "transparent"
   },
   particles: {
     number: {
@@ -194,7 +194,7 @@ tsParticles.load("tsparticles", {
       type: "circle"
     },
     opacity: {
-      value: 0.6,
+      value: 0.4,
       random: true
     },
     size: {
