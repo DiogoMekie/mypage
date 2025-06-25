@@ -107,10 +107,10 @@ document.addEventListener("DOMContentLoaded", () => {
       filtered.forEach((repo) => {
         const card = document.createElement("div");
         card.className = `
-    bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800
-    p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300
-    border border-gray-700 hover:border-amber-400 transform hover:-translate-y-1
-  `;
+  bg-gradient-to-br from-[#1a1a1a] via-[#0f0f0f] to-[#1a1a1a]
+  p-6 rounded-xl shadow-lg hover:shadow-amber-400/30 transition-all duration-300
+  border border-gray-800 hover:border-amber-400 transform hover:-translate-y-1
+`;
         card.setAttribute("data-aos", "fade-up");
 
         card.innerHTML = `

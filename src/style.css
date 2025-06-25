@@ -4,6 +4,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5.8rem;
 }
 
 #navbar {
@@ -16,6 +17,10 @@ html {
 
 #download-cv {
   font-size: 19px;
+}
+
+#about-text{
+  font-size: 18px;
 }
 
 
