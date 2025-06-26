@@ -1,3 +1,5 @@
+![Project Status](https://img.shields.io/badge/Status-In%20Progress-blue)
+
 # 💼 My Developer Portfolio
 
 This is my personal portfolio website — a place to share my journey, showcase my work,
